@@ -630,7 +630,7 @@ textarea { min-height: 140px; resize: vertical; }
 }
 
 @media (min-width: 1100px) {
-  .footer-grid > :first-child { margin-top: -4.5rem; }
+  body:has(.close-band) .footer-grid > :first-child { margin-top: -4.5rem; }
 }
 
 .site-footer h2 {
