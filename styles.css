@@ -1012,7 +1012,12 @@ textarea { min-height: 140px; resize: vertical; }
   .hero img { min-height: 260px; }
 
   .bleed-hero,
-  .bleed-hero > img { min-height: 56vh; height: 56vh; }
+  .bleed-hero > img {
+    min-height: 56vh;
+    min-height: 56svh;
+    height: 56vh;
+    height: 56svh;
+  }
 
   .bleed-hero > img { object-position: 68% 34%; }
 
@@ -1031,7 +1036,20 @@ textarea { min-height: 140px; resize: vertical; }
   .service-row.flip img { order: 0; }
 
   .trio img,
-  .service-row img { height: 260px; }
+  .service-row img,
+  .card img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-position: center 22%;
+  }
+
+  .split img,
+  .frame {
+    max-height: none;
+    height: auto;
+  }
+
+  html, body { overflow-x: clip; }
 
   .hero-follow-row {
     flex-direction: column;
